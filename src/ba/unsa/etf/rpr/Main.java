@@ -4,37 +4,37 @@ import java.util.Scanner;
 
 public class Main {
 
-    private static Korpa korpa = new Korpa();
-    private static Supermarket supermarket = new Supermarket();
+        private static Korpa korpa = new Korpa();
+        private static Supermarket supermarket = new Supermarket();
 
-    private static void unosArtikalaUMarket(){
-        supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "1"));
-        supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "2"));
-        supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "3"));
-        supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "4"));
-        supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "5"));
-        supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "6"));
-        supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "7"));
-        supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "8"));
-        supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "9"));
-        supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "10"));
-        supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "11"));
-        supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "12"));
-        supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "13"));
-        supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "14"));
-        supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "15"));
-        supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "16"));
-        supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "17"));
-        supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "18"));
-        supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "19"));
-        supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "20"));
-    }
-
-    public static void ispisArtikala(Artikl[] artikli){
-        for (Artikl a : artikli) {
-            if(a != null) System.out.println("Naziv: " + a.getNaziv() + ", Kod: " + a.getKod() + ", Cijena: " + a.getCijena() + " KM");
+        private static void unosArtikalaUMarket(){
+            supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "1"));
+            supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "2"));
+            supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "3"));
+            supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "4"));
+            supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "5"));
+            supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "6"));
+            supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "7"));
+            supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "8"));
+            supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "9"));
+            supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "10"));
+            supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "11"));
+            supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "12"));
+            supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "13"));
+            supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "14"));
+            supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "15"));
+            supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "16"));
+            supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "17"));
+            supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "18"));
+            supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "19"));
+            supermarket.dodajArtikl(new Artikl("Biciklo", 1000, "20"));
         }
-    }
+
+        public static void ispisArtikala(Artikl[] artikli){
+            for (Artikl a : artikli) {
+                if(a != null) System.out.println("Naziv: " + a.getNaziv() + ", Kod: " + a.getKod() + ", Cijena: " + a.getCijena() + " KM");
+            }
+        }
 
     public static void main(String[] args) {
 //      Kreirati program koji modelira supermarket. Kupac ima korpu koja moze sadrzavati maksimalno 50 artikala.
@@ -48,6 +48,8 @@ public class Main {
 //      rjesavaju preko koda. Kupcu je potrebno omoguciti opciju da se prekine program, odnosno da odustane od kupovine,
 //      ili da ide na checkout gdje se obracunava potpuni iznos. Placanje se vrsi unosom pri cemu se validira da li je
 //      unesena negativna, odnosno dovoljna suma novca.
+
+
 
         unosArtikalaUMarket();
         for(;;){
